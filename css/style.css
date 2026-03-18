@@ -24,7 +24,15 @@
   --border: #444;
 }
 
+@font-face {
+  font-family: 'MyFont';
+  src: url('my_fonts/IosevkaCharonMono-Regular.ttf) format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  font-family: 'MyFont', sans-serif;
   background-color: var(--bg);
   color: var(--text);
   font-family: sans-serif;
