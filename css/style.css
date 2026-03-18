@@ -8,6 +8,19 @@
   --header-text: #222;
 }
 
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --bubble-bg: #eeeeee;
+  --name-bg: #cccccc;
+
+  --header-bg: #ffffffcc;
+  --header-text: #222;
+
+  --accent: #6aa1ff;
+  --border: #cccccc;
+}
+
 [data-theme="dark"] {
   --bg: #1a1a1a;
   --text: #eeeeee;
@@ -16,9 +29,9 @@
 
   --header-bg: #121212cc;
   --header-text: #f5f5f5;
-}
-main {
-  padding-top: 3.5rem; /* розтошування назви розділу під банером  */
+
+  --accent: #8aa4ff;
+  --border: #444;
 }
 
 body {
@@ -121,89 +134,6 @@ header {
   max-width: 80%;
   line-height: 1.4;
 }
-
-/* Персонажі — Ім’я + Бульбашка */
-
-.name-kaede { background-color: #A5D762; color: #000; }
-.bubble-kaede { background-color: #C3FF80; color: #000; }
-
-.name-renga { background-color: #c2a858; color: #fff; }
-.bubble-renga { background-color: #EED59E; color: #000; }
-
-.name-kafka { background-color: #9a87cc; color: #fff; }
-.bubble-kafka { background-color: #C8B7FF; color: #000; }
-
-.name-yukikaze { background-color: #5fb8dd; color: #fff; }
-.bubble-yukikaze { background-color: #A3DFFF; color: #000; }
-
-.name-akuta { background-color: #e08a50; color: #fff; }
-.bubble-akuta { background-color: #FFC199; color: #000; }
-
-.name-ushio { background-color: #89c774; color: #fff; }
-.bubble-ushio { background-color: #CBF899; color: #000; }
-
-/* Інші персонажі */
-.name-ten { background-color: #c0c9d9; color: #000; }
-.bubble-ten { background-color: #E4EBF5; color: #000; }
-
-.name-liguang { background-color: #cc6a5d; color: #fff; }
-.bubble-liguang { background-color: #FF998A; color: #000; }
-
-.name-kiroku { background-color: #9f7cc4; color: #fff; }
-.bubble-kiroku { background-color: #D7ADF3; color: #000; }
-
-.name-nanaki { background-color: #5fb8b1; color: #fff; }
-.bubble-nanaki { background-color: #9BE1DC; color: #000; }
-
-.name-muneuji { background-color: #e49cb8; color: #000; }
-.bubble-muneuji { background-color: #FFD2E9; color: #000; }
-
-.name-raito { background-color: #769e8d; color: #fff; }
-.bubble-raito { background-color: #A0C8B7; color: #000; }
-
-.name-kinari { background-color: #d4b9e9; color: #000; }
-.bubble-kinari { background-color: #F5E4FF; color: #000; }
-
-.name-chihiro { background-color: #6ed6a7; color: #000; }
-.bubble-chihiro { background-color: #A3F5CD; color: #000; }
-
-.name-tao { background-color: #789dbc; color: #fff; }
-.bubble-tao { background-color: #ADCDE4; color: #000; }
-
-.name-kuguri { background-color: #c46e92; color: #fff; }
-.bubble-kuguri { background-color: #EE9BB7; color: #000; }
-
-.name-nagi { background-color: #8784d1; color: #fff; }
-.bubble-nagi { background-color: #B9B7F5; color: #000; }
-
-.name-toi { background-color: #ccb86d; color: #000; }
-.bubble-toi { background-color: #FFEEB2; color: #000; }
-
-.name-ryui { background-color: #e2758d; color: #fff; }
-.bubble-ryui { background-color: #FFA8BE; color: #000; }
-
-.name-yodaka { background-color: #c2be86; color: #000; }
-.bubble-yodaka { background-color: #F8F3D5; color: #000; }
-
-.name-netaro { background-color: #dd70b7; color: #fff; }
-.bubble-netaro { background-color: #FF99E4; color: #000; }
-
-.name-renga-akuta { background-color: #d19954; color: #fff; }
-.bubble-renga-akuta { background-color: #f6cb9c; color: #000; }
-
-
-.name-yachiyo { background-color: #BDCCC3; color: #000; }
-.bubble-yachiyo { background-color: #E5EAE1; color: #000; }
-
-.name-sakujiro { background-color: #BDCCC3; color: #000; }
-.bubble-sakujiro { background-color: #E5EAE1; color: #000; }
-
-.name-nayuki { background-color: #BDCCC3; color: #000; }
-.bubble-nayuki { background-color: #E5EAE1; color: #000; }
-
-.name-daniel { background-color: #BDCCC3; color: #000; }
-.bubble-daniel { background-color: #E5EAE1; color: #000; }
-
 
 /* Ілюстрації */
 .illustration {
@@ -332,12 +262,6 @@ header {
   --header-bg: #ffffffcc;
   --header-text: #222;
 }
-
-[data-theme="dark"] {
-  --header-bg: #121212cc;
-  --header-text: #f5f5f5;
-}
-
 
 
 /* Навігація */
