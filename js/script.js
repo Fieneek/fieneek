@@ -1,26 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // --- ТЕМА ---
   const btn = document.getElementById('theme-toggle');
+  if (btn) {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const current = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', current);
 
-  if (!btn) {
-    console.log("Кнопка не знайдена");
-    return;
+    btn.addEventListener('click', () => {
+      const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
   }
-
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const current = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
-
-  document.documentElement.setAttribute('data-theme', current);
-
-  btn.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-
-    console.log("Тема змінена на:", newTheme);
-  });
-});
 
   // --- ВИПАДАЮЧЕ МЕНЮ РОЗДІЛІВ ---
   const toggleButton = document.querySelector('.dropdown-toggle');
