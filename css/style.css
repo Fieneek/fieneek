@@ -6,25 +6,29 @@
 
   --header-bg: #ffffffcc;
   --header-text: #222;
-
-  --accent: #6aa1ff;
-  --border: #cccccc;
 }
 
 [data-theme="dark"] {
   --bg: #1a1a1a;
   --text: #eeeeee;
+  --bubble-bg: #333333;
+  --name-bg: #444444;
+
+  --header-bg: #121212cc;
+  --header-text: #f5f5f5;
+}
+main {
+  padding-top: 3.5rem; /* розтошування назви розділу під банером  */
 }
 
 body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: sans-serif;
   margin: 0;
   padding: 20px;
   font-size: 16px;
   line-height: 1.5;
-
-  background-color: var(--bg);
-  color: var(--text);
-}
 }
 
 header {
@@ -46,44 +50,28 @@ header {
   display: inline-block;
 }
 
-.empty-state {
-  text-align: center;
-  margin-top: 4rem;
-  opacity: 0.7;
-}
-
-.empty-state p {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-}
-
-.empty-state span {
-  font-size: 1rem;
-}
-
 .dropdown-toggle {
-  background-color: var(--bubble-bg);
-  color: var(--text);
-  border-radius: 10px;
-  transition: 0.2s;
+  background-color: #555;
+  color: white;
   padding: 8px 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  border-radius: 6px;
 }
 
 .dropdown-menu {
-  background-color: var(--bg);
-  border: 1px solid var(--border);
-  backdrop-filter: blur(8px);
   display: none;
   position: absolute;
+  background-color: #f9f9f9;
   min-width: 160px;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 1;
+
   right: 0;
   left: auto;
+
   max-height: 300px;
   overflow-y: auto;
 }
@@ -96,36 +84,19 @@ header {
 }
 
 .dropdown-menu a:hover {
-  background-color: var(--accent);
-  color: white;
+  background-color: #eee;
 }
 
 /* Діалоги */
-
 .dialogue {
   display: flex;
-  align-items: flex-end;
-  margin-bottom: 18px;
-  animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 .avatar img {
-  width: 56px;
-  height: 56px;
+  width: 60px;
   border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 .text-block {
@@ -140,9 +111,6 @@ header {
   font-weight: bold;
   display: inline-block;
   margin-bottom: 0.3em;
-  border-radius: 8px;
-  font-size: 0.85em;
-  letter-spacing: 0.3px;
 }
 
 .bubble {
@@ -151,9 +119,91 @@ header {
   border-radius: 8px;
   margin-top: 0.4em;
   max-width: 80%;
-  line-height: 1.5;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  line-height: 1.4;
 }
+
+/* Персонажі — Ім’я + Бульбашка */
+
+.name-kaede { background-color: #A5D762; color: #000; }
+.bubble-kaede { background-color: #C3FF80; color: #000; }
+
+.name-renga { background-color: #c2a858; color: #fff; }
+.bubble-renga { background-color: #EED59E; color: #000; }
+
+.name-kafka { background-color: #9a87cc; color: #fff; }
+.bubble-kafka { background-color: #C8B7FF; color: #000; }
+
+.name-yukikaze { background-color: #5fb8dd; color: #fff; }
+.bubble-yukikaze { background-color: #A3DFFF; color: #000; }
+
+.name-akuta { background-color: #e08a50; color: #fff; }
+.bubble-akuta { background-color: #FFC199; color: #000; }
+
+.name-ushio { background-color: #89c774; color: #fff; }
+.bubble-ushio { background-color: #CBF899; color: #000; }
+
+/* Інші персонажі */
+.name-ten { background-color: #c0c9d9; color: #000; }
+.bubble-ten { background-color: #E4EBF5; color: #000; }
+
+.name-liguang { background-color: #cc6a5d; color: #fff; }
+.bubble-liguang { background-color: #FF998A; color: #000; }
+
+.name-kiroku { background-color: #9f7cc4; color: #fff; }
+.bubble-kiroku { background-color: #D7ADF3; color: #000; }
+
+.name-nanaki { background-color: #5fb8b1; color: #fff; }
+.bubble-nanaki { background-color: #9BE1DC; color: #000; }
+
+.name-muneuji { background-color: #e49cb8; color: #000; }
+.bubble-muneuji { background-color: #FFD2E9; color: #000; }
+
+.name-raito { background-color: #769e8d; color: #fff; }
+.bubble-raito { background-color: #A0C8B7; color: #000; }
+
+.name-kinari { background-color: #d4b9e9; color: #000; }
+.bubble-kinari { background-color: #F5E4FF; color: #000; }
+
+.name-chihiro { background-color: #6ed6a7; color: #000; }
+.bubble-chihiro { background-color: #A3F5CD; color: #000; }
+
+.name-tao { background-color: #789dbc; color: #fff; }
+.bubble-tao { background-color: #ADCDE4; color: #000; }
+
+.name-kuguri { background-color: #c46e92; color: #fff; }
+.bubble-kuguri { background-color: #EE9BB7; color: #000; }
+
+.name-nagi { background-color: #8784d1; color: #fff; }
+.bubble-nagi { background-color: #B9B7F5; color: #000; }
+
+.name-toi { background-color: #ccb86d; color: #000; }
+.bubble-toi { background-color: #FFEEB2; color: #000; }
+
+.name-ryui { background-color: #e2758d; color: #fff; }
+.bubble-ryui { background-color: #FFA8BE; color: #000; }
+
+.name-yodaka { background-color: #c2be86; color: #000; }
+.bubble-yodaka { background-color: #F8F3D5; color: #000; }
+
+.name-netaro { background-color: #dd70b7; color: #fff; }
+.bubble-netaro { background-color: #FF99E4; color: #000; }
+
+.name-renga-akuta { background-color: #d19954; color: #fff; }
+.bubble-renga-akuta { background-color: #f6cb9c; color: #000; }
+
+
+.name-yachiyo { background-color: #BDCCC3; color: #000; }
+.bubble-yachiyo { background-color: #E5EAE1; color: #000; }
+
+.name-sakujiro { background-color: #BDCCC3; color: #000; }
+.bubble-sakujiro { background-color: #E5EAE1; color: #000; }
+
+.name-nayuki { background-color: #BDCCC3; color: #000; }
+.bubble-nayuki { background-color: #E5EAE1; color: #000; }
+
+.name-daniel { background-color: #BDCCC3; color: #000; }
+.bubble-daniel { background-color: #E5EAE1; color: #000; }
+
 
 /* Ілюстрації */
 .illustration {
@@ -167,20 +217,17 @@ header {
 }
 
 /* Проєкти */
-
-  transition: 0.25s;
 .project-card {
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background-color: var(--bubble-bg);
+  border: 2px solid #ccc;
+  border-radius: 12px;
   padding: 16px;
   margin: 16px 0;
+  background-color: var(--bubble-bg);
   transition: transform 0.2s, border-color 0.2s;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  transform: scale(1.01);
   border-color: #999;
 }
 
@@ -209,7 +256,6 @@ header {
 }
 
 /* Мобільна адаптивність */
-
 @media (max-width: 600px) {
   html {
     font-size: 18px;
@@ -233,16 +279,9 @@ header {
     font-size: 1.8rem;
   }
 
-  .dialogue {
-    align-items: flex-start;
-  }
-
   .bubble {
     max-width: 100%;
-  }
-
-  .text-block {
-    margin-left: 8px;
+    font-size: 1.1rem;
   }
 
   .avatar img {
@@ -251,25 +290,21 @@ header {
 }
 
 /* Прогрес-бар */
-
 .progress-bar-container {
   position: fixed;
   top: 0;
   left: 0;
   height: 4px;
   width: 100%;
-  background: transparent;
+  background: #e0e0e0;
   z-index: 999;
 }
-
 .progress-bar {
   height: 100%;
   width: 0;
-  background: linear-gradient(90deg, #6aa1ff, #8aa4ff);
-  height: 3px;
+  background: #6aa1ff;
   transition: width 0.1s linear;
 }
-
 .sticky-header {
   position: fixed;
   top: 0;
@@ -283,9 +318,6 @@ header {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
   z-index: 1000;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
 }
 
 .sticky-header.hidden {
@@ -300,6 +332,12 @@ header {
   --header-bg: #ffffffcc;
   --header-text: #222;
 }
+
+[data-theme="dark"] {
+  --header-bg: #121212cc;
+  --header-text: #f5f5f5;
+}
+
 
 
 /* Навігація */
