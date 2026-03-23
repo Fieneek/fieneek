@@ -24,8 +24,7 @@
   --border: #444;
 }
 
-body {
-  background-color: var(--bg);
+[data-theme="dark"] body {  background-color: var(--bg);
   color: var(--text);
   font-family: sans-serif;
   margin: 0;
