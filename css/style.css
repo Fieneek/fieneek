@@ -124,6 +124,18 @@ header {
 
 /* Персонажі — Ім’я + Бульбашка */
 
+.name-nazuna { background-color: #EEDCB3; color: #000; }
+.bubble-nazuna { background-color: #F7EED9; color: #000; }
+
+.name-nazuna { background-color: #FFEC47; color: #000; }
+.bubble-nazuna { background-color: #FFF6A3; color: #000; }
+
+.name-mitsuru { background-color: #ED6D35; color: #000; }
+.bubble-mitsuru { background-color: #F6B69A; color: #000; }
+
+.name-hajime { background-color: #CAB8D9; color: #000; }
+.bubble-hajime { background-color: #E5DCEC; color: #000; }
+
 .name-kaede { background-color: #A5D762; color: #000; }
 .bubble-kaede { background-color: #C3FF80; color: #000; }
 
