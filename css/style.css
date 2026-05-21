@@ -125,6 +125,12 @@ header {
 
 /* Персонажі — Ім’я + Бульбашка */
 
+.name-shu { background-color: #E3ACAE; color: #000; }
+.bubble-shu { background-color: #F1D6D7; color: #000; }
+
+.name-mika { background-color: #006A6C; color: #000; }
+.bubble-mika { background-color: #80B5B6; color: #000; }
+
 .name-tomoya { background-color: #EEDCB3; color: #000; }
 .bubble-tomoya { background-color: #F7EED9; color: #000; }
 
