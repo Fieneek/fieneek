@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Пролог</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
+</head>
+<body>
+
+  <!-- Прогрес-бар -->
+  <div class="progress-bar-container">
+    <div class="progress-bar"></div>
+  </div>
+  
+<header class="sticky-header">
+  <div class="header-title">Пролог</div>
+
+  <button id="theme-toggle">🌗</button>
+
+<div class="dropdown-container">
+    <button class="dropdown-toggle">Розділи ▾</button>
+    <div id="chapterDropdown" class="dropdown-menu">
+      <a href="1_mar.html">Розділ 1</a>
+      <a href="2_mar.html">Розділ 2</a>
+    </div>
+  </div>
+</header>
+
+  <main>
+
+<section class="dialogue">
+  <div class="avatar">
+    <img src="/fieneek/tl/enstars/images/charas/rabbits/nazuna.png" alt="надзуна">
+  </div>
+  <div class="text-block">
+    <span class="name name-nazuna">надзуна</span>
+    <div class="bubble bubble-nazuna">
+	ви вші молодщі~ певно, втомилишчя... ♪    </div>
+  </div>
+</section>
+
+<section class="dialogue">
+  <div class="avatar">
+    <img src="/fieneek/tl/enstars/images/charas/rabbits/mitsuru.png" alt="міцуру">
+  </div>
+  <div class="text-block">
+    <span class="name name-mitsuru">міцуру</span>
+    <div class="bubble bubble-mitsuru">
+	ахаха, але саме ти виглядаєш так, ніби зомлієш! ну ж бо, ніі~чяне, збадьорися! треба з’їсти хліба! хліб хліб хліб~ ☆
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="chapter-nav">
+      <span class="chapter-status">Розділ 1 / 21</span>
+      <a href="1_mal.html" class="nav-button">← Минулий</a>
+      <a href="3_mal.html" class="nav-button">Наступний →</a>
+    </footer>
+  </main>
+
+  <!-- Підключення скриптів -->
+  <script src="../../../js/script.js"></script>
+  <script>
+    // Прогрес-бар
+    document.addEventListener('scroll', () => {
+      const progress = document.querySelector('.progress-bar');
+      const scrollTop = window.scrollY;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      progress.style.width = scrollPercent + '%';
+    });
+
+    // Поточний розділ
+    const currentChapter = 1;
+    const totalChapters = 21;
+    const prevLink = "1_mal.html";
+    const nextLink = "3_mal.html";
+  </script>
+</body>
+</html>
